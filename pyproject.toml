@@ -3,10 +3,17 @@ name = "tm-oop-lab10"
 version = "1.0.0"
 description = "Лабораторная работа по ООП"
 requires-python = ">=3.9"
+readme = "README.md"
+dependencies = []
 
-[project.optional-dependencies]
+[dependency-groups]
 dev = [
-    "pytest>=7.0.0",
+    "black>=25.11.0",
+    "flake8>=7.3.0",
+    "isort>=7.0.0",
+    "mypy>=1.19.0",
+    "pre-commit>=4.5.0",
+    "pytest>=9.0.1",
 ]
 
 [tool.pytest.ini_options]
